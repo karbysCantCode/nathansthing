@@ -8,8 +8,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="file" id="fileupload"  />
-    <img src="" id="imagebox">
-    <button id="uploadbtn" onclick="upload()">Upload</button>
+    <div class="container">
+        <h1>Enter Your Repo Token</h1>
+        
+        <div class="input-group">
+            <label for="myTextbox">Repo Token:</label>
+            <input type="text" id="myTextbox" oninput="updateToken()">
+        </div>
+
+        <div class="input-group">
+            <label for="fileupload">Select an Image:</label>
+            <input type="file" id="fileupload">
+        </div>
+
+        <div class="image-container">
+            <img src="" id="imagebox" alt="Selected Image">
+        </div>
+
+        <button id="uploadbtn" onclick="upload()">Upload</button>
+    </div>
 </body>
 </html>

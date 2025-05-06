@@ -7,6 +7,12 @@ const REPO = 'nathansthing';
 const BRANCH = 'main';
 let FILE_PATH_IN_REPO = null;
 
+function updateToken() {
+  // Get the value of the textbox and set it to the variable
+  GITHUB_TOKEN = document.getElementById("myTextbox").value;
+  console.log("Token set to:", GITHUB_TOKEN);
+}
+
 function extractBase64(dataUrl) {
   const commaIndex = dataUrl.indexOf(',');
   if (commaIndex === -1) return dataUrl;
